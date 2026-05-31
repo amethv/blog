@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Personal - MySite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src=" " alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
@@ -19,59 +23,59 @@
                 <li><a href="educacion.html">Estudios</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="viajes.html">Viajes</a></li>
-                <li><strong>Blog</strong></li> <li><a href="contacto.html">Contacto</a></li>
+                <li><strong>Blog Personal</strong></li> 
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor-pagina">
         
-        <section id="titulo-blog">
-            <h1>MINI BLOG</h1>
-            <p><em>Creative Spot</em></p>
+        <section id="titulo-blog" class="header-blog">
+            <h1 class="titulo-seccion">MINI BLOG</h1>
+            <p class="subtitulo-blog"><em>Creative Spot</em></p>
         </section>
 
         <section id="publicaciones">
-            <h2>Publicaciones Recientes</h2>
+            <h2 class="subtitulo-publicaciones">Publicaciones Recientes</h2>
 
-            <article class="post">
+            <article class="post-tarjeta">
                 <div class="post-imagen">
-                    <img src="imagenes/portada-la-tregua.jpg" alt="Alt text" width="250">
+                    <img src="imagenes/portada-la-tregua.jpg" alt="Portada de La Tregua de Mario Benedetti">
                 </div>
                 
                 <div class="post-contenido">
                     <h3>Citas destacadas del libro: La Tregua (Mario Benedetti)</h3>
-                    <p><em>Tiempo aproximado de lectura: 3 minutos</em></p>
+                    <span class="tiempo-lectura">Tiempo aproximado de lectura: 3 minutos</span>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat.
+                        "Posiblemente me quisiera, vaya uno a saberlo, pero lo cierto es que tenía una habilidad especial para herirme". Descubre la recopilación de los fragmentos más profundos, melancólicos y románticos del diario de Martín Santomé en esta obra maestra uruguaya.
                     </p>
-                    <a href="publicacion1.html">LEER MÁS</a>
+                    <div class="enlace-contenedor">
+                        <a href="publicacion1.html" class="btn-leer-mas">LEER MÁS</a>
+                    </div>
                 </div>
             </article>
 
-            <hr> <article class="post">
+            <hr class="separador-blog">
+
+            <article class="post-tarjeta">
                 <div class="post-imagen">
-                    <img src="imagenes/portada-libro-EPC.jpg" alt="Alt text" width="250">
+                    <img src="imagenes/portada-libro-EPC.jpg" alt="Saga Los Habitantes del Aire de Holly Black">
                 </div>
                 
                 <div class="post-contenido">
                     <h3>Reseña Saga: "Los Habitantes del Aire"</h3>
-                    <p><em>Tiempo aproximado de lectura: 3 minutos</em></p>
+                    <span class="tiempo-lectura">Tiempo aproximado de lectura: 3 minutos</span>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat.
+                        Sumérgete en el peligroso y fascinante mundo de Elfhame. Analizamos la evolución de Jude Duarte y el Príncipe Cardan en una historia repleta de intrigas políticas, traiciones, magia cruel y un romance enemies-to-lovers que te atrapa desde el primer capítulo.
                     </p>
-                    <a href="publicacion2.html">LEER MÁS</a>
+                    <div class="enlace-contenedor">
+                        <a href="publicacion2.html" class="btn-leer-mas">LEER MÁS</a>
+                    </div>
                 </div>
             </article>
 
         </section>
-
     </main>
 
     <footer>

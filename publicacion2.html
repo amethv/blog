@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Publicación - MySite</title>
+    <title>Reseña: Los Habitantes del Aire - MySite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src="" alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
@@ -25,62 +29,65 @@
         </nav>
     </header>
 
-    <main>
-        <article>
+    <main class="contenedor-pagina">
+        <article class="articulo-completo">
             
             <header class="articulo-header">
                 <p class="tagline"><em>Creative Spot</em></p>
-                <h1>Reseña Saga: "Los Habitantes del Aire"</h1>
-                <h2>Autora: Holly Black</h2>
-                <p class="metadatos"><em>Tiempo aproximado de lectura: 3 minutos</em></p>
+                <h1 class="titulo-articulo">Reseña Saga: "Los Habitantes del Aire"</h1>
+                <h2 class="autor-libro">Por Holly Black</h2>
+                <div class="metadatos-articulo">
+                    <span class="meta-item">Lectura: 4 minutos</span>
+                    <span class="meta-item">Categoría: Fantasía / Young Adult</span>
+                </div>
             </header>
 
-            <hr> <div class="imagen-destacada">
-                <img src="imagenes/portada-libro-EPC.jpg" alt="Portada: El Principe Cruel" width="250">
+            <div class="imagen-destacada-contenedor">
+                <!-- Imagen de "El Príncipe Cruel" -->
+                <img src="imagenes/portada-libro-EPC.jpg" alt="Portada de El Príncipe Cruel" class="img-articulo">
             </div>
 
             <div class="contenido-texto">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Si buscas una historia de hadas donde no todo es polvo de estrellas y deseos concedidos, la saga de <strong>Los Habitantes del Aire</strong> es para ti. Holly Black nos transporta a un mundo donde las criaturas mágicas son crueles, caprichosas y peligrosas. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    La historia sigue a <strong>Jude Duarte</strong>, una humana que, tras el asesinato de sus padres, es llevada a vivir a la Corte Suprema de Elfhame. En un lugar donde todos la desprecian por su mortalidad, Jude decide que no será una víctima, sino una jugadora en el tablero político de Faerie.
+                </p>
+
+                <!-- Citas potentes de la saga -->
+                <blockquote class="cita-literaria">
+                    "Si no puedo ser mejor que ellos, me convertiré en algo mucho peor." — Jude Duarte.
+                </blockquote>
+
+                <blockquote class="cita-literaria">
+                    "La mayoría de la gente quiere cosas increíbles. Yo solo quiero ser increíble."
+                </blockquote>
+
+                <p>
+                    Lo que más me atrapó de esta trilogía no fue solo la magia, sino la tensión entre Jude y el <strong>Príncipe Cardan</strong>. Es uno de los mejores <em>enemies-to-lovers</em> que he leído, porque ambos son personajes complejos, grises y ambiciosos que luchan por el poder mientras intentan descifrar sus propios sentimientos.
                 </p>
             </div>
 
-            <section class="bloque-mixto">
+            <!-- Sección sobre Jude o Holly Black -->
+            <section class="bloque-mixto-autor">
                 <div class="bloque-mixto-imagen">
-                    <img src="imagenes/publicacion-jude-duarte.jpg" alt="Jude Duarte" width="250">
+                    <img src="imagenes/publicacion-jude-duarte.jpg" alt="Ilustración de Jude Duarte">
                 </div>
                 
                 <div class="bloque-mixto-texto">
+                    <h3>El Personaje: Jude Duarte</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        Jude es una de mis protagonistas favoritas porque rompe con el molde de la "heroína perfecta". Es ambiciosa, a veces despiadada y está dispuesta a todo para proteger a su familia y ganarse un lugar en un mundo que intenta destruirla. Su evolución de una niña asustada a una reina estratégica es simplemente magistral.
                     </p>
                 </div>
             </section>
 
         </article>
 
-        <p><a href="blogpersonal.html">← Volver al Blog</a></p>
+        <div class="retorno-contenedor">
+            <a href="blogpersonal.html" class="enlace-volver">← Volver al Blog</a>
+        </div>
     </main>
 
     <footer>

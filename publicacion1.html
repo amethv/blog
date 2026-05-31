@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Publicación - MySite</title>
+    <title>La Tregua - Citas Destacadas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src="" alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
@@ -25,61 +29,68 @@
         </nav>
     </header>
 
-    <main>
-        <article>
+    <main class="contenedor-pagina">
+        <article class="articulo-completo">
+            
             <header class="articulo-header">
                 <p class="tagline"><em>Creative Spot</em></p>
-                <h1>Citas destacadas del libro: La Tregua</h1>
-                <h2>Autor: Mario Benedetti</h2>
-                <p class="metadatos"><em>Tiempo aproximado de lectura: 3 minutos</em></p>
+                <h1 class="titulo-articulo">Citas destacadas del libro: La Tregua</h1>
+                <h2 class="autor-libro">Por Mario Benedetti</h2>
+                <div class="metadatos-articulo">
+                    <span class="meta-item">Lectura: 3 minutos</span>
+                    <span class="meta-item">Categoría: Reseñas Literarias</span>
+                </div>
             </header>
 
-            <hr> <div class="imagen-destacada">
-                <img src="imagenes/portada-la-tregua.jpg" alt="Portada: La Tregua" width="250">
+            <div class="imagen-destacada-contenedor">
+                <img src="imagenes/portada-la-tregua.jpg" alt="Portada del libro La Tregua de Mario Benedetti" class="img-articulo">
             </div>
 
             <div class="contenido-texto">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Publicada en 1960, <strong>La Tregua</strong> es una de las obras más emblemáticas de la literatura latinoamericana. Escrita en forma de diario íntimo, nos introduce en la rutina gris y monótona de Martín Santomé, un hombre viudo cercano a la jubilación, cuya vida da un vuelco inesperado al conocer a Laura Avellaneda. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    A través de sus páginas, Benedetti explora la soledad, el paso del tiempo, la burocracia del alma y la maravillosa pero efímera irrupción del amor. A continuación, comparto mis fragmentos y reflexiones favoritas de esta joya literaria:
+                </p>
+
+                <!-- Bloques de Citas Estilizados -->
+                <blockquote class="cita-literaria">
+                    "Ella me daba la mano y no hacía falta más. Me alcanzaba para sentir que era bien recibido. Más que besarla, más que acostarnos juntos, más que ninguna otra cosa, ella me daba la mano y eso era amor."
+                </blockquote>
+
+                <blockquote class="cita-literaria">
+                    "Posiblemente me quisiera, vaya uno a saberlo, pero lo cierto es que tenía una habilidad especial para herirme."
+                </blockquote>
+
+                <blockquote class="cita-literaria">
+                    "Tengo la horrible sensación de que pasa el tiempo y no hago nada, y nada pasa, y nada me conmueve hasta la raíz."
+                </blockquote>
+
+                <p>
+                    Cada una de estas líneas refleja la melancolía cotidiana que Benedetti dominaba a la perfección. Es un libro que duele, pero que al mismo tiempo reconforta al recordarnos que siempre existe la posibilidad de una tregua con el destino.
                 </p>
             </div>
 
-            <section class="bloque-mixto">
+            <!-- Mini Sección sobre el Autor -->
+            <section class="bloque-mixto-autor">
                 <div class="bloque-mixto-imagen">
-                    <img src="imagenes/mario-benedetti-autor.jpg" alt="Mario Benedetti" width="250">
+                    <img src="imagenes/mario-benedetti-autor.jpg" alt="Fotografía de Mario Benedetti">
                 </div>
                 
                 <div class="bloque-mixto-texto">
+                    <h3>Sobre el Autor: Mario Benedetti</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                        enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        Fue un destacado escritor, poeta y dramaturgo uruguayo, integrante de la célebre Generación del 45. Su lenguaje directo, cargado de sensibilidad, sencillez y un profundo entendimiento de la psicología de la clase media urbana, logró conectar con millones de lectores en todo el mundo. Su vasta obra incluye más de 80 libros traducidos a más de 20 idiomas.
                     </p>
                 </div>
             </section>
 
         </article>
 
-        <p><a href="blogpersonal.html">← Volver al Blog</a></p>
+        <div class="retorno-contenedor">
+            <a href="blogpersonal.html" class="enlace-volver">← Volver al Blog</a>
+        </div>
     </main>
 
     <footer>

@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - MySite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src="imagenes/logo.png" alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
@@ -20,73 +24,40 @@
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="viajes.html">Viajes</a></li>
                 <li><a href="blogpersonal.html">Blog Personal</a></li>
-                <li><strong>Contacto</strong></li> </ul>
+                <li><strong>Contacto</strong></li> 
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor-pagina">
         
+        <!-- Sección Principal: Presentación con Foto -->
         <section id="informacion-contacto">
             <div class="titulo-pagina">
                 <h1>CONTÁCTAME</h1>
             </div>
 
-            <div class="tabla-datos-contenedor">
-                <table border="1" style="border-collapse: collapse; cellpadding: 10px;">
-                    <tr>
-                        <td><strong>Teléfono</strong></td>
-                        <td>+593 0984500149</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Dirección de Correo</strong></td>
-                        <td>ameliabozano@gmail.com</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <hr> <section id="formulario-contacto">
-            <h2>ENVÍAME UN MENSAJE</h2>
-
-            <form action="#" method="POST" class="form-mensaje">
+            <div class="perfil-contacto-bloque">
+                <div class="contacto-imagen">
+                    <!-- Tu foto o imagen que elijas -->
+                    <img src="imagenes/foto-contacto.jpg" alt="Amelia Bozano" width="280">
+                </div>
                 
-                <div class="grupo-formulario">
-                    <label for="nombre">Nombre *</label>
-                    <br>
-                    <input type="text" id="nombre" name="nombre" required style="width: 60%; max-width: 500px;">
+                <div class="contacto-presentacion">
+                    <h2>¡Hola! Soy Amelia Bozano</h2>
+                    <p class="tagline-contacto">Estudiante de Negocios Digitales</p>
+                    <p>
+                        Me apasiona la tecnología, el marketing y la innovación digital. Si quieres conversar sobre proyectos, compartir lecturas o simplemente conectar, te invito a seguirme y escribirme en mis espacios digitales.
+                    </p>
+
+                    <!-- Enlaces directos y limpios a tus redes -->
+                    <div class="enlaces-redes-contacto">
+                        <p><strong>Correo:</strong> <a href="mailto:ameliabozano@gmail.com">ameliabozano@gmail.com</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://instagram.com" target="_blank">@tu_usuario</a></p>
+                        <p><strong>TikTok:</strong> <a href="https://tiktok.com" target="_blank">@tu_usuario</a></p>
+                    </div>
                 </div>
-
-                <br>
-
-                <div class="grupo-formulario">
-                    <label for="email">Email *</label>
-                    <br>
-                    <input type="email" id="email" name="email" required style="width: 60%; max-width: 500px;">
-                </div>
-
-                <br>
-
-                <div class="grupo-formulario">
-                    <label for="tema">Tema *</label>
-                    <br>
-                    <input type="text" id="tema" name="tema" required style="width: 60%; max-width: 500px;">
-                </div>
-
-                <br>
-
-                <div class="grupo-formulario">
-                    <label for="mensaje">Mensaje *</label>
-                    <br>
-                    <textarea id="mensaje" name="mensaje" rows="6" required style="width: 60%; max-width: 500px;"></textarea>
-                </div>
-
-                <br>
-
-                <div class="boton-enviar-contenedor">
-                    <button type="submit" class="btn-enviar">ENVIAR</button>
-                </div>
-
-            </form>
+            </div>
         </section>
 
     </main>

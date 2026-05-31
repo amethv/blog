@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí - MySite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src="imagenes/logo.png" alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><strong>Sobre mí</strong></li> <li><a href="educacion.html">Estudios</a></li>
+                <li><strong>Sobre mí</strong></li> 
+                <li><a href="educacion.html">Estudios</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="viajes.html">Viajes</a></li>
                 <li><a href="blogpersonal.html">Blog Personal</a></li>
@@ -24,14 +29,15 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor-pagina">
 
+        <!-- SECCIÓN: INFORMACIÓN PERSONAL -->
         <section id="informacion-personal">
-            <h1>SOBRE MÍ</h1>
+            <h1 class="titulo-seccion">SOBRE MÍ</h1>
             
             <div class="bloque-presentacion">
                 <div class="foto-perfil">
-                    <img src="imagenes/mi-foto.jpg" alt="Foto de Amelia Lozano" width="400">
+                    <img src="imagenes/mi-foto.jpg" alt="Foto de Amelia Lozano">
                 </div>
                 
                 <div class="texto-perfil">
@@ -39,7 +45,7 @@
                         Actualmente tengo 20 años, mi signo zodiacal es libra y aunque no creo en eso, tengo que decir
                         que algo de verdad tiene su significado. Me considero una persona pacífica que constantemente busca
                         la equidad y la armonía dentro de un grupo. Disfruto rodearme de personas de las que puedo aprender algo 
-                        nuevo y con las que pueda charlas sin contar las horas. Me gusta escuchar música y álbumes nuevos de mis 
+                        nuevo y con las que pueda charlar sin contar las horas. Me gusta escuchar música y álbumes nuevos de mis 
                         artistas favoritos para luego discutir con mi mejor amiga sobre cuáles canciones nos gustaron más.  
                     </p>
                 </div>
@@ -48,101 +54,87 @@
 
         <hr>
 
+        <!-- SECCIÓN: MI FAMILIA -->
         <section id="mi-familia">
-            <h2>MI FAMILIA</h2>
+            <h2 class="titulo-seccion">MI FAMILIA</h2>
             
             <div class="tarjetas-familia">
                 <article class="familiar">
-                    <img src="imagenes/familiar1.jpg" alt="Avatar Nombre 1" width="150">
+                    <img src="imagenes/familiar1.jpg" alt="Mamá Carmen Pozo">
                     <h3>Mamá Carmen Pozo</h3>
                     <p>Es la persona más importante en mi vida, la mujer que siempre ha estado ahí para mí, para
-                        guiarme, cuidarme y enseñarme a ser mejor persona cada día. Es mi mayor inspiración y ejemplo a seguir,
-                        su manera de amar y de ser es mi aspiración como mujer y persona.</p>
+                       guiarme, cuidarme y enseñarme a ser mejor persona cada día. Es mi mayor inspiración y ejemplo a seguir,
+                       su manera de amar y de ser es mi aspiración como mujer y persona.</p>
                 </article>
 
                 <article class="familiar">
-                    <img src="imagenes/familiar2.jpg" alt="Avatar Nombre 2" width="150">
+                    <img src="imagenes/familiar2.jpg" alt="Papá Denis Bozano">
                     <h3>Papá Denis Bozano</h3>
                     <p>Mi papá es la persona en la que siempre puedo confiar y en la que me puedo apoyar si necesito
-                        un consejo o una lección de vida. Siempre ha sido un padre cariñoso y presente, entregado a su familia
-                        al 100%. Es mi mejor amigo y en quien más confío.
-                    </p>
+                       un consejo o una lección de vida. Siempre ha sido un padre cariñoso y presente, entregado a su familia
+                       al 100%. Es mi mejor amigo y en quien más confío.</p>
                 </article>
 
                 <article class="familiar">
-                </article>
-
-                <article class="familiar">
-                    <img src="imagenes/familiar3.jpg" alt="Avatar Nombre 3" width="150">
+                    <img src="imagenes/familiar3.jpg" alt="Hermana Nathy">
                     <h3>Hermana Nathy</h3>
                     <p>Nunca he imaginado mi vida sin ella, es la persona con quien más he reído, he llorado y con quien espero
-                        pasar el resto nuestras vidas porque crecer juntas me demostró que nunca encontraré una persona con la que 
-                        disfrute estar más que con ella. Es mi mejor amiga y el mejor regalo que mis padres pudieron darme.
-                    </p>
-                </article>
-
-                <article class="familiar">
+                       pasar el resto de nuestras vidas porque crecer juntas me demostró que nunca encontraré una persona con la que 
+                       disfrute estar más que con ella. Es mi mejor amiga y el mejor regalo que mis padres pudieron darme.</p>
                 </article>
             </div>
         </section>
 
         <hr>
 
+        <!-- SECCIÓN: MIS AMIGOS -->
         <section id="mis-amigos">
-            <h2>MIS AMIGOS</h2>
+            <h2 class="titulo-seccion">MIS AMIGOS</h2>
 
             <div class="galeria-amigos">
-                
-                <div class="columna-foto">
-                    <figure>
-                        <img src="imagenes/amigos1.jpg" alt="Foto con amigos en la playa" width="250">
-                        <figcaption>Texto debajo de la foto 1</figcaption>
-                    </figure>
-                </div>
-
-                <div class="columna-foto-doble">
-                    <figure>
-                        <img src="imagenes/amigos2.jpg" alt="Foto de viaje con amigos" width="250">
-                        <figcaption>Texto debajo de la foto 2</figcaption>
-                    </figure>
-                    
-                    <figure>
-                        <img src="imagenes/amigos3.jpg" alt="Reunión de fin de semana" width="250">
-                        <figcaption>Texto debajo de la foto 3</figcaption>
-                    </figure>
-                </div>
-
-                <div class="columna-foto">
-                    <figure>
-                        <img src="imagenes/amigos4.jpg" alt="Celebración de cumpleaños" width="250">
-                        <figcaption>Texto debajo de la foto 4</figcaption>
-                    </figure>
-                </div>
-
+                <figure>
+                    <img src="imagenes/amigos1.jpg" alt="Foto con amigos en la playa">
+                    <figcaption>Texto debajo de la foto 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/amigos2.jpg" alt="Foto de viaje con amigos">
+                    <figcaption>Texto debajo de la foto 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/amigos3.jpg" alt="Reunión de fin de semana">
+                    <figcaption>Texto debajo de la foto 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/amigos4.jpg" alt="Celebración de cumpleaños">
+                    <figcaption>Texto debajo de la foto 4</figcaption>
+                </figure>
             </div>
 
             <div class="texto-amigos">
-                <p>
+                <blockquote class="cita-kdrama">
                     "La vida no tenía que ser perfecta para brillar. Son los pequeños momentos los que hacen 
                     que tu vida brille, y la felicidad es lo que experimentas cuando esos momentos se unen. 
                     Nunca podrás recuperar tu juventud. Tienes que soltarte y divertirte un poco de vez en cuando."
-                    Twinkling Watermelon (2023)
-                </p>
+                    <span>- Twinkling Watermelon (2023)</span>
+                </blockquote>
+                
                 <p>
                     Mis amigos son personas que se han convertido en una parte muy importante de mi vida y de mi juventud.
                     Las risas, las bromas, las salidas y todos los momentos que he vivido con ellos han hecho que crecer no sea
                     una época triste, una en la que sabes que estás creciendo, que a partir de cierto punto todo tu futuro depende de ti mismo.
+                </p>
+                <p>
                     Esta etapa pudo haber estado llena de temor por lo que crecer y madurar significa, pero mis amigas que ya tenía y los
                     nuevos amigos que he seguido haciendo han hecho que no me sienta sola.
                 </p>
-                <p>
-                   Amigas: Dany, es mi mejor amiga de toda la vida; Naye, es la más espontánea; Dianita, es la mejor amistad que
-                    me pudo haber dado la uni; Lu, la conozco poco pero siento que llevamos siendo amigas por mucho tiempo
+                <p class="amigas-lista">
+                   <strong>Amigas:</strong> Dany, es mi mejor amiga de toda la vida; Naye, es la más espontánea; Dianita, es la mejor amistad que
+                   me pudo haber dado la uni; Lu, la conozco poco pero siento que llevamos siendo amigas por mucho tiempo.
                 </p>
             </div>
         </section>
 
-        </main>
+    </main>
 
     <footer>
         <p>© 2026 - MySite | Blog Personal</p>

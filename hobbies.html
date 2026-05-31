@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies - MySite</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <header>
         <div class="logo-contenedor">
-            <img src="imagenes/logo.png" alt="LOGO" width="80">
+            <img src="imagenes/Ame_logo.png" alt="LOGO" width="80">
         </div>
         
         <nav>
@@ -17,33 +21,34 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="sobre-mi.html">Sobre mí</a></li>
                 <li><a href="educacion.html">Estudios</a></li>
-                <li><strong>Hobbies</strong></li> <li><a href="viajes.html">Viajes</a></li>
+                <li><strong>Hobbies</strong></li> 
+                <li><a href="viajes.html">Viajes</a></li>
                 <li><a href="blogpersonal.html">Blog Personal</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
+    <main class="contenedor-pagina">
         <div class="titulo-pagina">
-            <h1>PASATIEMPOS</h1>
+            <h1 class="titulo-seccion">PASATIEMPOS</h1>
         </div>
 
+        <!-- SECCIÓN 1: LECTURA Y ESCRITURA -->
         <section class="bloque-pasatiempo">
             <div class="contenedor-hobie">
                 
                 <div class="info-hobie">
-                    <h2><strong>Nombre:</strong></h2>
-                    <p>Lectura y Escritura</h2>
+                    <h2 class="subtitulo-hobby"><strong>Nombre:</strong> Lectura y Escritura</h2>
                     
-                    <h3><strong>Descripción:</strong></h3>
-                    <p>
-                        "Para viajar lejos no hay mejor nave que un libro". -Emily Dickinson
-                    </p>
+                    <h3 class="etiqueta-descripcion"><strong>Descripción:</strong></h3>
+                    <blockquote class="cita-libro">
+                        "Para viajar lejos no hay mejor nave que un libro". — Emily Dickinson
+                    </blockquote>
                     <p>
                         Me gusta la lectura porque me permite aprender nuevas ideas, conocer diferentes perspectivas y desarrollar 
                         mi imaginación. Disfruto cómo cada libro puede transmitir emociones, enseñanzas y experiencias que me 
-                        ayudan tanto en mi vida personal como académica. Además, leer me ayuda a relajarme y a fortalecer mi creatividad 
+                        ayuden tanto en mi vida personal como académica. Además, leer me ayuda a relajarme y a fortalecer mi creatividad 
                         y comprensión.
                     </p>
                     <p>
@@ -53,14 +58,15 @@
                     </p>
                 </div>
                 
+                <!-- Collage de Fotos: Lectura -->
                 <div class="collage-imagenes-hobie">
-                    <div class="grupo-izquierdo-fotos">
-                        <div class="fila-superior-miniaturas">
-                            <img src="imagenes/hobbie-leer1.jpg" alt="Detalle 1" width="120">
-                            <img src="imagenes/hobbie-leer2.jpg" alt="Detalle 2" width="170">
+                    <div class="grupo-fotos">
+                        <div class="fila-superior">
+                            <figure><img src="imagenes/hobbie-leer1.jpg" alt="Detalle lectura 1"></figure>
+                            <figure><img src="imagenes/hobbie-leer2.jpg" alt="Detalle lectura 2"></figure>
                         </div>
-                        <div class="fila-inferior-ancha">
-                            <img src="imagenes/hobbie-leer3.jpg" alt="Vista panorámica" width="295">
+                        <div class="fila-inferior">
+                            <figure><img src="imagenes/hobbie-leer3.jpg" alt="Vista panorámica lectura"></figure>
                         </div>
                     </div>
                 </div>
@@ -68,28 +74,29 @@
             </div>
         </section>
 
-        <hr>
+        <hr class="separador-hobbies">
 
+        <!-- SECCIÓN 2: PINTURAS Y ACUARELAS (Invertido visualmente) -->
         <section class="bloque-pasatiempo">
-            <div class="contenedor-hobie">
+            <div class="contenedor-hobie bloque-invertido">
                 
+                <!-- Collage de Fotos: Pintura -->
                 <div class="collage-imagenes-hobie">
-                    <div class="grupo-izquierdo-fotos">
-                        <div class="fila-superior-miniaturas">
-                            <img src="imagenes/hobbie-pintar1.jpg" alt="Detalle 3" width="150">
-                            <img src="imagenes/hobbie-pintar2.jpg" alt="Detalle 4" width="145">
+                    <div class="grupo-fotos">
+                        <div class="fila-superior">
+                            <figure><img src="imagenes/hobbie-pintar1.jpg" alt="Detalle pintura 1"></figure>
+                            <figure><img src="imagenes/hobbie-pintar2.jpg" alt="Detalle pintura 2"></figure>
                         </div>
-                        <div class="fila-inferior-ancha">
-                            <img src="imagenes/hobbie-pintar-horizontal.jpg" alt="Pinturas" width="300">
+                        <div class="fila-inferior">
+                            <figure><img src="imagenes/hobbie-pintar-horizontal.jpg" alt="Pinturas y acuarelas"></figure>
                         </div>
                     </div>
                 </div>
 
                 <div class="info-hobie">
-                    <h2><strong>Nombre:</strong></h2>
-                    <p>Pinturas y Acuarelas</p>
+                    <h2 class="subtitulo-hobby"><strong>Nombre:</strong> Pinturas y Acuarelas</h2>
                     
-                    <h3><strong>Descripción:</strong></h3>
+                    <h3 class="etiqueta-descripcion"><strong>Descripción:</strong></h3>
                     <p>
                         Me gusta la pintura y la acuarela porque me permiten expresar mi creatividad y 
                         transmitir emociones a través de los colores y las formas. Disfruto el proceso de crear

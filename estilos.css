@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .titulo-articulo, .titulo-seccion {
     font-family: var(--fuente-titulos);
     font-weight: 600; 
     color: var(--color-primario);
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: 0.2px;
 }
 
@@ -69,7 +69,6 @@ nav a:hover, nav a:focus {
 
 nav strong {
     color: var(--color-primario);
-    border-bottom: 2px solid var(--color-primario);
     padding-bottom: 3px;
 }
 
@@ -84,7 +83,7 @@ BANNER PRINCIPAL
 }
 
 .banner-contenido h1 {
-    font-size: 3.2rem;
+    font-size: 6rem;
     margin-bottom: 10px;
     color: #532350;
     text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
@@ -292,8 +291,8 @@ PÁGINA SOBRE MÍ
 
 /* Cita del KDrama */
 .cita-kdrama {
-    background-color: #532350; /* Tu morado más oscuro */
-    color: #DCACDA; /* Texto lila claro */
+    background-color: #532350; 
+    color: #DCACDA; 
     padding: 30px;
     border-radius: 15px;
     font-style: italic;
@@ -327,7 +326,7 @@ PÁGINA SOBRE MÍ
 }
 
 /*-------------------------------------------------------------------------
-PÁGINA ESTUDIOS (ESTILOS NUEVOS)
+PÁGINA ESTUDIOS
 ---------------------------------------------------------------------------*/
 
 .subtitulo-estudios {
@@ -338,7 +337,7 @@ PÁGINA ESTUDIOS (ESTILOS NUEVOS)
     display: inline-block;
 }
 
-/* Agrega una línea decorativa sutil debajo del título */
+/* Agrega una línea debajo del título */
 .subtitulo-estudios::after {
     content: '';
     position: absolute;
@@ -360,7 +359,7 @@ PÁGINA ESTUDIOS (ESTILOS NUEVOS)
     right: 0;
 }
 
-/* Estructura en dos columnas (Texto a un lado, Fotos al otro) */
+/* Estructura en dos columnas */
 .bloque-estudios {
     display: flex;
     align-items: center;
@@ -426,7 +425,7 @@ PÁGINA ESTUDIOS (ESTILOS NUEVOS)
     line-height: 1.3;
 }
 
-/* --- Diseño Especial para el Collage de la Universidad --- */
+/* Diseño Especial para el Collage de la Universidad  */
 .grid-universidad {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -442,7 +441,7 @@ PÁGINA ESTUDIOS (ESTILOS NUEVOS)
     height: 150px;
 }
 
-/* Hace que la tercera foto (el evento de la CCQ) ocupe toda la fila inferior */
+/* Hace que la tercera foto sea larga */
 .foto-u3 {
     grid-column: span 2;
 }
@@ -451,22 +450,9 @@ PÁGINA ESTUDIOS (ESTILOS NUEVOS)
     height: 180px;
     max-width: 100%;
 }
-/* Ajustes para celulares */
-@media (max-width: 768px) {
-    .bloque-invertido {
-        flex-direction: row; /* En celulares vuelve al orden normal para que no se vea raro */
-    }
-    .titulo-derecha {
-        text-align: left;
-    }
-    .titulo-derecha::after {
-        right: auto;
-        left: 0;
-    }
-}
 
 /*-------------------------------------------------------------------------
-PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
+PÁGINA HOBBIES
 ---------------------------------------------------------------------------*/
 
 .bloque-pasatiempo {
@@ -478,10 +464,10 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     display: flex;
     align-items: center;
     gap: 50px;
-    flex-wrap: wrap; /* Hace que se adapte a laptops y celulares */
+    flex-wrap: wrap; 
 }
 
-/* Invierte el orden en pantallas grandes para el efecto espejo */
+/* Invierte el orden */
 .bloque-invertido {
     flex-direction: row-reverse;
 }
@@ -511,17 +497,15 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     margin-bottom: 15px;
 }
 
-/* Estilo especial para la frase de Emily Dickinson */
+/* Estilo especial para cita */
 .cita-libro {
     font-style: italic;
-    border-left: 3px solid var(--color-acento);
     padding-left: 15px;
     margin: 15px 0;
     color: var(--color-secundario);
     font-size: 1.1rem;
 }
 
-/* --- DISEÑO CONTROLADO PARA EL COLLAGE --- */
 .collage-imagenes-hobie {
     flex: 0.8;
     min-width: 320px;
@@ -534,7 +518,7 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     flex-direction: column;
     gap: 15px;
     width: 100%;
-    max-width: 320px; /* Controla el ancho máximo de todo el collage */
+    max-width: 320px; 
 }
 
 .fila-superior {
@@ -552,7 +536,7 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     width: 100%;
 }
 
-/* Control estricto de las imágenes para que encajen sin deformarse */
+/* Control de las imágenes para que encajen sin deformarse */
 .grupo-fotos figure {
     background: white;
     padding: 6px;
@@ -568,12 +552,12 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     border-radius: 8px;
 }
 
-/* Tamaños de altura fijos para crear armonía */
+/* Tamaños de altura fijos */
 .fila-superior figure:nth-child(1) img { height: 110px; }
 .fila-superior figure:nth-child(2) img { height: 110px; }
 .fila-inferior img { height: 140px; }
 
-/* Línea de separación sutil */
+/* Línea de separación */
 .separador-hobbies {
     border: 0;
     height: 1px;
@@ -581,21 +565,8 @@ PÁGINA HOBBIES (ESTILOS COLLAGE ALINEADO)
     margin: 40px 0;
 }
 
-/* Responsivo para celulares */
-@media (max-width: 768px) {
-    .bloque-invertido {
-        flex-direction: row; /* En celular todo baja en orden normal */
-    }
-    .contenedor-hobie {
-        gap: 30px;
-    }
-    .grupo-fotos {
-        max-width: 100%; /* Aprovecha el espacio en pantallas chicas */
-    }
-}
-
 /*-------------------------------------------------------------------------
-PÁGINA VIAJES (ESTILOS NUEVOS)
+PÁGINA VIAJES
 ---------------------------------------------------------------------------*/
 
 .seccion-destino {
@@ -615,7 +586,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
     display: inline-block;
 }
 
-/* Línea decorativa inferior morada */
+/* Línea inferior morada */
 .subtitulo-viajes::after {
     content: '';
     position: absolute;
@@ -627,7 +598,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
     border-radius: 2px;
 }
 
-/* Distribución en 3 columnas perfectas para tus fotos */
+/* Distribución en 3 fotos*/
 .galeria-viajes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -637,7 +608,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
 
 .foto-viaje {
     margin: 0;
-    background: #fdf2fd; /* Fondo sutil de marco */
+    background: #fdf2fd; 
     padding: 8px;
     border-radius: 14px;
     border: 1px solid rgba(180, 75, 175, 0.1);
@@ -651,7 +622,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
 .foto-viaje img {
     width: 100%;
     height: 180px;
-    object-fit: cover; /* Mantiene la proporción de las fotos de tus viajes sin estirarlas */
+    object-fit: cover; 
     border-radius: 10px;
     display: block;
 }
@@ -664,7 +635,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
     margin: 0;
 }
 
-/* Divisor sutil entre un viaje y otro */
+/* Divisor de un viaje y otro */
 .separador-viajes {
     border: 0;
     height: 1px;
@@ -673,7 +644,7 @@ PÁGINA VIAJES (ESTILOS NUEVOS)
 }
 
 /*-------------------------------------------------------------------------
-PÁGINA BLOG PERSONAL (ESTILOS NUEVOS)
+PÁGINA BLOG PERSONAL
 ---------------------------------------------------------------------------*/
 
 .header-blog {
@@ -697,7 +668,7 @@ PÁGINA BLOG PERSONAL (ESTILOS NUEVOS)
     padding-bottom: 10px;
 }
 
-/* Estructura de cada fila/tarjeta de post */
+/* Estructura de cada tarjeta*/
 .post-tarjeta {
     display: flex;
     background-color: white;
@@ -716,14 +687,14 @@ PÁGINA BLOG PERSONAL (ESTILOS NUEVOS)
 
 /* Contenedor fijo para la portada del libro */
 .post-imagen {
-    flex: 0 0 220px; /* No se estira ni se encoge, mantiene 220px */
-    background-color: #fcf8ff;
+    flex: 0 0 220px; 
+    background-color: var(--color-fondo);
 }
 
 .post-imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la portada perfectamente sin deformarla */
+    object-fit: cover; 
     display: block;
 }
 
